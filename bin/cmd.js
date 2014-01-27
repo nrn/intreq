@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var reqmap = require('../');
 var JSONStream = require('JSONStream');
 
