@@ -3,6 +3,8 @@
 Compress require paths down to integers in
 [module-deps](https://npmjs.org/package/module-deps) streams.
 
+[![build status](https://secure.travis-ci.org/substack/intreq.png)](http://travis-ci.org/substack/intreq)
+
 # example
 
 before:
