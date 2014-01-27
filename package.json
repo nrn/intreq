@@ -1,0 +1,38 @@
+{
+  "name": "intreq",
+  "version": "0.0.0",
+  "description": "compress require paths down to integers in module-deps streams",
+  "main": "index.js",
+  "bin": {
+    "intreq": "bin/cmd.js"
+  },
+  "dependencies": {
+    "JSONStream": "~0.7.1",
+    "falafel": "~0.3.1",
+    "inherits": "~2.0.1"
+  },
+  "devDependencies": {
+    "tape": "~2.3.2"
+  },
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/substack/intreq.git"
+  },
+  "homepage": "https://github.com/substack/intreq",
+  "keywords": [
+    "require",
+    "module-deps",
+    "browserify",
+    "browser-pack",
+    "browser-unpack"
+  ],
+  "author": {
+    "name": "James Halliday",
+    "email": "mail@substack.net",
+    "url": "http://substack.net"
+  },
+  "license": "MIT"
+}
