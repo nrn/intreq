@@ -1,3 +1,12 @@
-# intfile
+# reqmap
 
-Compress `require('foo/bar/baz')` calls down to `require(4)` integer IDs.
+Map
+
+For example, you could map `require('foo/bar/baz')` calls down to `require(4)`
+to save bytes for long path names before minification.
+
+# example
+
+``` js
+```
+
