@@ -35,12 +35,12 @@ IntReq.prototype._transform = function (row, enc, next) {
         return acc;
     }, {});
     
-    row.source = falafel(row.source, function (node) {
+    row.source = falafel('(function () {' + row.source + '})()', function (node) {
         if (self._isRequire(node)) {
             var key = node.arguments[0].value;
             node.arguments[0].update(JSON.stringify(mapped[key]));
         }
-    }).toString();
+    }).toString().slice(14, -4);
     
     this.push(row);
     next();

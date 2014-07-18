@@ -4,4 +4,6 @@
 {"id":2,"source":"var bar = require('./bar.js');\nmodule.exports = function (n) { return n * bar(1) };","deps":{"./bar.js":1}}
 ,
 {"id":3,"source":"var foo = require('./foo.js');\n\nconsole.log(foo(5));","deps":{"./foo.js":2},"entry":true}
+,
+{"id":4,"source":"return; var foo = require('./foo.js');\n\nconsole.log(foo(5));","deps":{"./foo.js":2},"entry":true}
 ]
